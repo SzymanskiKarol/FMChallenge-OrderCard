@@ -1,0 +1,140 @@
+:root {
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--pale-blue) url(images/pattern-background-desktop.svg) no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    background-color: white;
+    margin: 50px auto;
+    max-width: 350px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.text-container {
+    padding: 0 10%;
+}
+
+.main-img {
+    max-width: 100%;
+    display: inherit;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 30px 0 15px 0;
+}
+
+.description {
+    color: var(--desaturated-blue);
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 10%;
+}
+
+.price-box {
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.icon {
+    width: 35px;
+}
+
+a {
+    display: block;
+    font-size: 10px;
+    color: var(--bright-blue);
+    font-weight: 900;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.plan-box {
+    display: inline;
+    text-align: left;
+    color: var(--desaturated-blue);
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.name {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.payment {
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 10px 20px -5px hsla(245, 85%, 61%, 0.53);
+}
+
+.payment:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.cancel {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin: 24px 0 30px 0;
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+}
